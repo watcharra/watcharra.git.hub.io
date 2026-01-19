@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
+
+nav {
+   background-color: rgba(71, 206, 105, 0.281);
+    text-align: center;
+    
+
+}
+
+.choose-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+    
+
+}
+
+.choose-item1 {
+    background-color: rgba(175, 92, 92, 0.699);
+    margin: 100px;
+    padding: 100px 0 100px;
+    border-radius: 100px;
+    font-family: "Noto Sans Thai";
+    
+    
+
+}
+
+.choose-item2 {
+    background-color: rgba(82, 169, 196, 0.281);
+    margin: 100px;
+    padding: 100px 0 100px;
+    border-radius: 100px;
+    font-family: "Noto Sans Thai";
+    
+    
+    
+}
+
+.choose-item1:hover {
+    background-color: rgb(175, 92, 92);
+    
+    
+}
+
+.choose-item2:hover {
+    background-color: rgba(82, 169, 196, 0.986);
+    
+    
+    
+}
+
+.choose-item1 a {
+    text-decoration:none;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size: 40px;
+    
+}
+
+.choose-item2 a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size: 40px;
+    padding: 2rem;
+}
+
+
+

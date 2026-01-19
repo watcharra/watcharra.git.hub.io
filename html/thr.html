@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณอัตราการเต้นของหัวใจเป้าหมายของคุณ</h1>
+
+        <label>อายุ</label><br>
+        <input type="number" id="age" placeholder="ใส่อายุของคุณ"><br>
+        <label>เปอร์เซ็นต์การเต้นของหัวใจที่ต้องการ</label><br>
+        <input type="number" id="exercise" placeholder="เปอร์เซ็นต์ที่ต้องการ"><br>
+        <button onclick="calculate()">เริ่มคำนวณอัตราการเต้นของหัวใจเป้าหมายของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let age = document.getElementById("age").value;
+                let exercise = document.getElementById("exercise").value;
+
+                let thr = (220-age)*(exercise/100);
+
+                document.getElementById("result").innerHTML="อัตราการเต้นของหัวใจเป้าหมาย ของคุณคือ " + thr.toFixed(2) +"ครั้ง/นาที";
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>Target Heart Rate</h1>
+                <h2>อัตราการเต้นของหัวใจเป้าหมาย (Target Heart Rate) คือช่วงความเร็วที่หัวใจควรเต้นขณะออกกำลังกายเพื่อให้ได้ประโยชน์สูงสุด โดยคำนวณจาก สูตรหัวใจสูงสุด = 220 - อายุ และนำไปคูณกับเปอร์เซ็นต์ความหนักที่ต้องการ</h2>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

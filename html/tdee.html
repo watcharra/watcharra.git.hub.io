@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณTDEEของคุณ</h1>
+
+        <label>BMR</label><br>
+        <input type="number" id="bmr" placeholder="ใส่bmrของคุณ"><br>
+        <label>กิจกรรมของคุณ</label><br>
+        <input type="number" id="move" placeholder="ใส่ค่าตามกิจกรรมของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณTDEEของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let bmr = document.getElementById("bmr").value;
+                let move = document.getElementById("move").value;
+
+                let TDEE = bmr*move;
+
+                document.getElementById("result").innerHTML="TDEE ของคุณคือ " + TDEE.toFixed(2)
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>TDEE หาได้จาก</h1>
+                <p>หาได้จากการนำค่า BMR (Basal Metabolic Rate) ซึ่งเป็นพลังงานพื้นฐานของร่างกาย มาคูณด้วย "ตัวคูณระดับกิจกรรม (Activity Multiplier)" ที่สอดคล้องกับไลฟ์สไตล์การออกกำลังกายของคุณ โดยสูตรหลักคือ TDEE = BMR x ตัวคูณกิจกรรม เพื่อคำนวณพลังงานรวมที่ร่างกายใช้ทั้งหมดในแต่ละวัน สำหรับการลดน้ำหนัก ควรทานแคลอรี่น้อยกว่าค่า TDEE</p>
+                <h2>ค่าคงที่ตามกิจกรรมของคุณ</h2>
+                <li>ไม่ออกกำลังกายเลย 1.2</li>
+                <li>ออกกำลังกายเบาๆ 1.375</li>
+                <li>ออกกำลังกายปานกลาง 1.55</li>
+                <li>ออกกำลังกายหนัก 1.725</li>
+                <li>ออกกำลังกายหนักมาก 1.9</li>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

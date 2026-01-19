@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณโปรตีนที่ควรกินต่อวัน</h1>
+
+        <label>น้ำหนัก (กิโลกรัม)</label><br>
+        <input type="number" id="weight" placeholder="ใส่น้ำหนักของคุณ"><br>
+        <label>โปรตีนที่เหมาะกับช่วงอายุคุณ (กรัม)</label><br>
+        <input type="number" id="protein" placeholder= "ใส่โปรตีนที่เหมาะกับคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณโปรตีนที่ควรกินต่อวันของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let weight = document.getElementById("weight").value;
+                let protein = document.getElementById("protein").value;
+
+                let proteinneed = weight*protein;
+
+                document.getElementById("result").innerHTML="โปรตีนที่ควรกินต่อวันของคุณคือ " + proteinneed.toFixed(2) +"กรัม";
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>ปริมาณโปรตีนที่เหมาะสมสำหรับแต่ละช่วงวัย</h1>
+                <h2>เด็กและวัยรุ่น</h2>
+                <li>เด็ก (อายุ 1-8 ปี) ต้องการโปรตีนประมาณ 1.15 กรัมต่อน้ำหนักตัว 1 กิโลกรัมต่อวัน</li>
+                <li>วัยรุ่น (อายุ 9-18 ปี) ต้องการโปรตีนประมาณ 0.95 กรัมต่อน้ำหนักตัว 1 กิโลกรัมต่อวัน</li>
+                <h2>วัยผู้ใหญ่ วัยทำงาน</h2>
+                <li>ผู้ใหญ่ทั่วไป (อายุ 19 ปีขึ้นไป) ต้องการโปรตีนประมาณ 0.9 กรัมต่อน้ำหนักตัว 1 กิโลกรัมต่อวัน</li>
+                <h2>ผู้สูงอายุ</h2>
+                <li>ผู้สูงอายุ (อายุ 60 ปีขึ้นไป) ต้องการโปรตีนประมาณ 1.1 กรัมต่อน้ำหนักตัว 1 กิโลกรัมต่อวัน</li>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณพลังงานจากการออกกำลังกายของคุณ</h1>
+
+        <label>น้ำหนัก (กิโลกรัม)</label><br>
+        <input type="number" id="weight" placeholder="ใส่น้ำหนักของคุณ"><br>
+        <label>กิจกรรมของคุณ</label><br>
+        <input type="number" id="met" placeholder="ใส่ค่าตามกิจกรรมของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณพลังงานจากการออกกำลังกายของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let weight = document.getElementById("weight").value;
+                let met = document.getElementById("met").value;
+
+                let cal = weight*met*0.0175;
+
+                document.getElementById("result").innerHTML="พลังงานจากการออกกำลังกายของคุณ(ต่อนาที) คือ " + cal.toFixed(2) +"kal/m";
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>พลังงานจากการออกกำลังกายของคุณ(ต่อนาที)</h1>
+                <h2>แคลอรี่ที่เผาผลาญ (ต่อนาที) = น้ำหนัก (กก.) x METs x 0.0175.</h2>
+                <h3>โดยความเข้มข้นของกิจกรรม (METs) มีค่าดังนี้</h3>
+                <li>กิจกรรมนิ่งเฉย : 1.0 - 1.5 METs</li>
+                <li>กิจกรรมเบา : 1.6 - 2.9 METs</li>
+                <li>กิจกรรมปานกลาง : 3.0 - 5.9 METs</li>
+                <li>กิจกรรมหนัก : ≥ 6.0 METs</li>
+                
+
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

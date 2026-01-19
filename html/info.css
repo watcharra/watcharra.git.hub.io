@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+nav {
+    background-color: rgba(71, 206, 105, 0.281);
+    
+    font-family: "Oswald", sans-serif;
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+    
+}
+
+.menu li {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: rgb(45, 78, 47);
+    font-size: 22px;
+    
+}
+
+.info {
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(71, 206, 105, 0.041);
+}
+
+.info-title {
+    font-size: 30px;
+    padding: 1.5rem;
+    color: rgba(23, 202, 92, 0.616)
+    
+    
+}
+
+
+.info-item {
+    padding: .5rem;
+    
+
+}
+
+.info-item a {
+   
+    padding: .3rem;
+    text-decoration: none;
+    color: rgb(23, 202, 92);
+
+}
+
+.info-item p {
+    padding: 5px 0px 10px;
+    
+}
+
+.info-item a:hover{
+   
+    color: rgb(17, 146, 66);
+
+}
+
+
+.info-item1 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item1 h1{
+    color: rgb(23, 202, 92);
+
+}
+
+.info-item1 h2{
+    color: rgba(23, 202, 92, 0.5);
+
+}
+
+.info-item1 p {
+    font-size: 22px;
+}
+
+.info-item1 li {
+    font-size: 22px;
+    list-style: none;
+}
+
+.info-item1 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(23, 202, 92);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item1 a:hover {
+    color: rgb(154, 224, 181);
+}
+
+
+.info-item2 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item2 h1{
+    color: rgb(23, 130, 202);
+
+}
+
+.info-item2 h2{
+    color: rgba(23, 145, 202, 0.5);
+
+}
+
+.info-item2 p {
+    font-size: 22px;
+}
+
+.info-item2 li {
+    font-size: 22px;
+    list-style: none;
+}
+
+.info-item2 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(23, 151, 202);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item2 a:hover {
+    color: rgb(154, 192, 224);
+}
+
+.info-item2 img {
+    padding-top: 2rem;
+}
+
+.info-item3 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item3 h1{
+    color: rgb(202, 118, 23);
+
+}
+
+.info-item3 h2{
+    color: rgba(202, 124, 23, 0.5);
+
+}
+
+.info-item3 p {
+    font-size: 22px;
+}
+
+.info-item3 li {
+    font-size: 22px;
+    list-style: none;
+}
+
+.info-item3 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(202, 130, 23);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item3 a:hover {
+    color: rgb(224, 185, 154);
+}
+
+.info-item3 img {
+    padding-top: 2rem;
+}
+
+
+
+
+.info-item5 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item5 h1{
+    color: rgb(202, 35, 23);
+
+}
+
+.info-item5 h2{
+    color: rgba(202, 23, 23, 0.5);
+
+}
+
+.info-item5 p {
+    font-size: 22px;
+}
+
+
+.info-item5 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(202, 35, 23);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item5 a:hover {
+    color: rgb(224, 156, 154);
+}
+
+.info-item5 img {
+    padding-top: 2rem;
+}
+
+.info-item6 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item6 h1{
+    color: rgb(202, 130, 23);
+
+}
+
+.info-item6 h2{
+    color: rgba(202, 148, 23, 0.5);
+
+}
+
+.info-item6 p {
+    font-size: 22px;
+}
+
+
+.info-item6 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(202, 98, 23);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item6 a:hover {
+    color: rgb(224, 188, 154);
+}
+
+.info-item6 img {
+    padding-top: 2rem;
+}
+
+
+
+.info-item8 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item8 h1{
+    color: rgb(151, 23, 202);
+
+}
+
+.info-item8 h2{
+    color: rgba(115, 23, 202, 0.5);
+
+}
+
+.info-item8 p {
+    font-size: 22px;
+}
+
+
+.info-item8 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(145, 23, 202);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item8 a:hover {
+    color: rgb(203, 154, 224);
+}
+
+.info-item8 img {
+    padding-top: 2rem;
+}
+
+
+.info-item9 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item9 h1{
+    color: rgb(26, 23, 202);
+
+}
+
+.info-item9 h2{
+    color: rgba(23, 56, 202, 0.5);
+
+}
+
+.info-item9 p {
+    font-size: 22px;
+}
+
+.info-item9 li {
+
+    font-size: 22px;
+    list-style: none;
+
+}
+
+.info-item9 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(23, 26, 202);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item9 a:hover {
+    color: rgb(154, 158, 224);
+}
+
+.info-item9 img {
+    padding-top: 2rem;
+}
+
+
+.info-item10 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item10 h1{
+    color: rgb(202, 35, 23);
+
+}
+
+.info-item10 h2{
+    color: rgba(202, 23, 23, 0.5);
+
+}
+
+.info-item10 p {
+    font-size: 22px;
+}
+
+
+.info-item10 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(202, 35, 23);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item10 a:hover {
+    color: rgb(224, 156, 154);
+}
+
+.info-item10 img {
+    padding-top: 2rem;
+}
+
+
+.info-item11 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item11 h1{
+    color: rgb(202, 35, 23);
+
+}
+
+.info-item11 h2{
+    color: rgba(202, 23, 23, 0.5);
+
+}
+
+.info-item11 p {
+    font-size: 22px;
+}
+
+
+.info-item11 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(202, 35, 23);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item11 a:hover {
+    color: rgb(224, 156, 154);
+}
+
+.info-item11 img {
+    padding-top: 2rem;
+}
+
+
+.info-item12 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item12 h1{
+    color: rgb(0, 0, 0);
+
+}
+
+
+.info-item12 p {
+    font-size: 22px;
+}
+
+
+.info-item12 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(0, 0, 0);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+.info-item12 a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.info-item12 img {
+    padding-top: 2rem;
+}
+
+
+.info-item13 {
+
+    font-family: "Noto Sans Thai";
+    
+}
+.info-item13 h1{
+    color: rgb(23, 202, 175);
+
+}
+
+.info-item13 h2{
+    color: rgba(23, 202, 190, 0.5);
+
+}
+
+.info-item13 p {
+    font-size: 22px;
+}
+
+.info-item13 li {
+    font-size: 22px;
+    list-style: none;
+
+}
+
+.info-item13 a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    background-color:rgb(23, 202, 166);
+    padding: 1rem; 
+    border-radius: 10px;
+    
+}
+
+
+
+.info-item13 a:hover {
+    color: rgb(154, 223, 224);
+}
+
+.info-item13 img {
+    padding-top: 2rem;
+}
+
+.credit-infomation {
+    background-color:rgba(34, 189, 93, 0.473);
+
+}
+
+
+.credit-info {
+    text-align:center;
+    color: #ffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    
+    
+}
+
+.credit-info a {
+
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    padding: .5rem;
+
+}
+
+.credit-info a:hover {
+
+    color: rgb(17, 146, 66);
+
+}
+
+

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+nav {
+    background-color: rgba(71, 206, 105, 0.281);
+    
+    font-family: "Oswald", sans-serif;
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+    
+
+    
+    
+    
+}
+
+.menu li {
+    margin: 0 2rem;
+    font-size: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: rgb(45, 78, 47);
+    
+    
+}
+
+
+.banner {
+    background-color: rgba(71, 206, 105, 0.13);
+    font-family: "Noto Sans Thai";
+}
+.banner-con {
+    display: flex;
+    justify-content: space-between
+    
+
+}
+
+.banner-info {
+    width: 100%;
+    padding: 2rem;
+    
+    
+}
+
+.banner-info h4 {
+    font-size: 2rem;
+    padding: 0px 0px 20px;
+
+}
+
+.banner-info p {
+    font-size: 20px;
+     padding: 0px 0px 40px;
+     letter-spacing: 2px;
+}
+
+.banner-info a {
+    font-size: 1.5rem;
+    background-color: rgb(116, 230, 160);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+
+}
+
+.banner-info a:hover{
+    color: rgb(57, 114, 79) ;
+}
+
+.banner-img {
+    width: 100%;
+    padding: 2rem ;
+    border-radius: 7px;
+}
+
+.info {
+    font-family: "Noto Sans Thai";
+    background-color: rgba(71, 206, 105, 0.041);
+}
+
+.info-title {
+    font-size: 30px;
+    padding: 1.5rem;
+}
+
+
+.info-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.info-item {
+    padding: .5rem;
+    
+
+}
+
+
+.info-item p {
+    padding: 5px 0px 10px;
+    
+}
+
+.info-item a:hover{
+   
+    color: rgb(17, 146, 66);
+
+}
+
+.nextpage {
+    color: rgb(23, 202, 92);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.nextpage:hover {
+    color: rgb(17, 146, 66);
+    
+}
+.credit-infomation {
+    background-color:rgba(34, 189, 93, 0.473);
+
+}
+
+
+.credit-info {
+    text-align:center;
+    color: #ffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    
+    
+}
+
+.credit-info a {
+
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    padding: .5rem;
+
+}
+
+.credit-info a:hover {
+
+    color: rgb(17, 146, 66);
+
+}
+
+
+
+
+
+
+
+
+

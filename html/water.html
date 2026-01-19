@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณการดื่มน้ำต่อวันของคุณ</h1>
+
+        <label>น้ำหนัก (กิโลกรัม)</label><br>
+        <input type="number" id="weight" placeholder="ใส่น้ำหนักของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณการดื่มน้ำต่อวันของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let weight = document.getElementById("weight").value;
+                
+
+                let water = (weight*30)/1000;
+
+                document.getElementById("result").innerHTML="การดื่มน้ำต่อวันของคุณ คือ " + water.toFixed(2) +" ลิตร";
+        } 
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>การดื่มน้ำ</h1>
+                <p>การคำนวณปริมาณน้ำที่ดื่มต่อวันทำได้ง่ายๆ โดยใช้สูตร น้ำหนักตัว (กก.) x 30 มิลลิลิตร แต่ควรปรับเพิ่มตามกิจกรรม, อากาศร้อน, หรือมีโรคประจำตัว โดยดื่มน้ำสะอาดอย่างสม่ำเสมอตลอดวัน ไม่ใช่ดื่มรวดเดียวเยอะๆ และควรปรึกษาแพทย์หากมีโรคประจำตัว เช่น ไตหรือหัวใจ</p>
+                <h1>ปัจจัยที่ต้องพิจารณาเพิ่ม</h1>
+                <li>กิจกรรมหนัก:ออกกำลังกาย หรือเสียเหงื่อมาก ต้องดื่มเพิ่มเพื่อชดเชย</li>
+                <li>อากาศร้อน:ร่างกายสูญเสียน้ำมากขึ้น</li>
+                <li>โรคประจำตัว:ผู้ป่วยโรคไต, หัวใจ ควรปรึกษาแพทย์ เพราะความต้องการน้ำอาจแตกต่างไป</li>
+                <li>วัย:เด็กและวัยรุ่นมีความต้องการน้ำแตกต่างกัน</li>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>
+                <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p><br>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

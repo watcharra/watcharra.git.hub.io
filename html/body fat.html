@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณbody fatของคุณ(ผู้ชาย)</h1>
+
+        <label>อายุ</label><br>
+        <input type="number" id="age" placeholder="ใส่อายุของคุณ"><br>
+        <label>ค่าBMI</label><br>
+        <input type="number" id="bmi" placeholder="ใส่bmiของคุณ"><br>
+        <label>ค่าคงที่</label><br>
+        <input type="number" id="k" placeholder="ใส่ค่าคงที่ตามเพศของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณbody fatของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let age = document.getElementById("age").value;
+                let bmi = document.getElementById("bmi").value;
+                let k = document.getElementById("k").value;
+
+
+                let bf = (1.2*bmi)+(0.23*age)-k;
+
+                document.getElementById("result").innerHTML="body fatของคุณคือ " + bf.toFixed(2)+ "%";
+        }
+        </script>
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h2>ค่าคงที่ผู้ชาย 16.2</h2>
+                <h2>ค่าคงที่ผู้ชาย 5.4</h2>
+                <h1>การคำนวณจาก BMI (ค่าประมาณ)</h1>
+                <li>ใช้สูตร: (1.2 x BMI) + (0.23 x อายุ) – 16.2 (สำหรับผู้ชาย)</li>
+                <li>ใช้สูตร: (1.2 x BMI) + (0.23 x อายุ) – 5.4 (สำหรับผู้หญิง)</li>
+                <p>สัดส่วนของไขมันทั้งหมดในร่างกายเทียบกับน้ำหนักรวม ซึ่งเป็นตัวชี้วัดสุขภาพที่แม่นยำกว่า BMI โดยแบ่งเกณฑ์สุขภาพเป็นระดับต่างๆ เช่น จำเป็น (Essential), นักกีฬา (Athlete), ฟิต (Fitness), พอดี (Acceptable), และอ้วน (Obese) โดยมีเกณฑ์ต่างกันตามเพศและอายุ</p>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณBMIของคุณ</h1>
+
+        <label>น้ำหนัก (กิโลกรัม)</label><br>
+        <input type="number" id="weight" placeholder="ใส่น้ำหนักของคุณ"><br>
+        <label>ส่วนสูง (เมตร)</label><br>
+        <input type="number" id="height" placeholder="ใส่ส่วนสูงของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณBMIของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let weight = document.getElementById("weight").value;
+                let height = document.getElementById("height").value;
+
+                let bmi = weight/(height*height);
+
+                document.getElementById("result").innerHTML="BMI ของคุณคือ " + bmi.toFixed(2)
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>เทียบผลลัพธ์</h1>
+                <h2>มีสูตรการคำนวณ = น้ำหนักตัว(Kg) / (ส่วนสูง(m) ยกกำลังสอง)</h2>
+                <li>ระดับ 1 น้อยกว่า18.5 น้ำหนักต่ำกว่าเกณฑ์
+                มีภาวะเสี่ยงร่างกายขาดสารอาหาร อาจทำให้ร่างกายอ่อนเพลียง่าย ภูมิคุ้มกันบกพร่อง</li>
+                <li>ระดับ 2 18.5 – 22.9 น้ำหนักสมส่วน
+                เป็นระดับเกณฑ์มาตรฐาน มีภาวะเสี่ยงต่อโรคแทรกซ้อนจากโรคอ้วนได้น้อยที่สุด</li>
+                <li>ระดับ 3 23.0 – 24.9 น้ำหนักเกินมาตรฐาน
+                มีภาวะเสี่ยงเกิดโรคแทรกซ้อนจากโรคอ้วนได้</li>
+                <li>ระดับ 4 25.0 – 29.9 สภาวะ อ้วน
+                เป็นเกณฑ์สภาวะอ้วนระดับ 1 มีความเสี่ยงเกิดโรคแทรกซ้อนจากโรคอ้วนได้สูง</li>
+                <li>ระดับ 5 มากกว่า 30.0  สภาวะ อ้วนมาก
+                เป็นเกณฑ์สภาวะอ้วนระดับ 2 มีความเสี่ยงเกิดโรคแทรกซ้อนจากโรคอ้วนได้สูงที่สุด ควรพบแพทย์เพื่อประเมินการรับยาคุมไขมัน คุมน้ำตาลในเลือด</li>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+                <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>

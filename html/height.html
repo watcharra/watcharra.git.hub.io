@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SukkapabD</title>
+    <link rel="stylesheet" href="calculate.css">
+
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="nav-con">
+        <div class="logo">
+            <a href="home.html">
+            <img  src="img/IMG_1447-Photoroom.png" alt="logo" width="20%">
+            </a>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="health.html">
+                <img src="img/88081.png" alt="logo health" width="20px" height="20px">  Health Calculation</a>
+            </li>
+            <li><a href="exercise.html">
+                <img src="img/6619275.png" alt="logo health" width="20px" height="20px">  exercise Calculation</a>
+            </li>
+            <li><a href="info.html">information</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+   
+    <section class="calculate">
+        <div class="container">
+            <div class="calculate-con">
+            <div class="calculate-info">
+        
+        <h1>คำนวณรอบเอวของคุณ</h1>
+
+        
+        <label>ส่วนสูง (เซนติเมตร)</label><br>
+        <input type="number" id="height" placeholder="ใส่ส่วนสูงของคุณ"><br>
+        <button onclick="calculate()">เริ่มคำนวณรอบเอวของคุณ</button>
+        <h2 id="result"></h2>
+    
+        <script>
+            function calculate() {
+                let height = document.getElementById("height").value;
+
+                let whtr = height/2;
+
+                document.getElementById("result").innerHTML="รอบเอวของคุณควรน้อยกว่า " + whtr.toFixed(2) + " cm";
+        }
+        </script>
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info-con">
+            <div class="info-info">
+                <h1>WHtR (Waist-to-Height Ratio)</h1>
+                <p>อัตราส่วนเอวต่อส่วนสูง เป็นเครื่องมือประเมินความเสี่ยงโรคอ้วนลงพุงและความเสี่ยงโรคหัวใจ โดยคำนวณจาก รอบเอว (ซม.) หารด้วย ส่วนสูง (ซม.) เกณฑ์ง่ายๆ คือ เอวไม่ควรเกินครึ่งหนึ่งของส่วนสูง (ค่า WHtR ไม่ควรเกิน 0.5) และค่าที่สูงกว่านี้บ่งบอกถึงความเสี่ยงสุขภาพที่เพิ่มขึ้นโดยเฉพาะไขมันในช่องท้อง</p>
+                <a href="info.html">อ่านข้อมูลเพิ่มเติม</a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+   <section class="credit-infomation">
+        <div class="container">
+            <div class="credit-con">
+            <div class="credit-info">
+                <img src="img/IMG_1447-Photoroom.png" alt=""
+                width="20%">
+                <h2>ติดต่อเราได้ที่</h2>             
+               <p>gmail</p>             
+                <p>wstcharra5246@gmail.com</p>             
+                <p>tel-083-065-7647</p><br>
+                
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+</body>
+</html>
